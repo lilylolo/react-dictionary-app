@@ -1,6 +1,4 @@
 .App-wrapper {
-  border: black 2px solid;
-  border-radius: 20px;
   margin: 0 auto;
   margin-top: 100px;
   max-width: 900px;
@@ -11,6 +9,10 @@
   text-align: center;
   font-size: 50px;
   padding-bottom: 50px;
+}
+
+body {
+  background: #f6f6f6;
 }
 
 footer {

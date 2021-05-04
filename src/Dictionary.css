@@ -1,2 +1,17 @@
-.Dictionary {
+section {
+  background: white;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(36, 37, 38, 0.08);
+  padding: 30px;
+  margin: 20px 0;
+}
+
+.Dictionary input {
+  width: 75%;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: #333;
+  border: 1px solid #ddd;
+  margin: 10px 90px;
 }

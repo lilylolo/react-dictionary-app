@@ -15,18 +15,17 @@ export default function Dictionary() {
     }
 
 
-    function handlePexelsResponse(response) {
-        setPhotos(response.data.photos);
+    function handlePixabayResponse(response) {
+        setPhotos(response.data.hits);
     }
 
    function search() {
             let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
             axios.get(apiUrl).then(handleDictionaryResponse);
 
-            let pexelsApiKey = "563492ad6f917000010000014337572360c3447290a2edefb9d1176a";
-            let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=6`
-            let headers = { "Authorization": `Bearer ${pexelsApiKey}` };
-            axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
+            let pixabayApiKey = "21482582-81de24cd9f2082b4b2c2583d8";
+            let pixabayApiUrl = `https://pixabay.com/api/?key=${pixabayApiKey}&q=${keyword}&image_type=photo&per_page=6`
+            axios.get(pixabayApiUrl).then(handlePixabayResponse);
         }
 
     function handleSubmit(event) {
@@ -38,6 +37,8 @@ export default function Dictionary() {
         setKeyword(event.target.value);
 
     }
+
+    
 
     function load() {
         setLoaded(true);

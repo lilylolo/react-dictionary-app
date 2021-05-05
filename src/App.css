@@ -5,6 +5,10 @@
   padding: 35px;
 }
 
+.App-header {
+  font-family: "Monoton", cursive;
+}
+
 .App-wrapper .App-header {
   text-align: center;
   font-size: 50px;
@@ -18,4 +22,13 @@ body {
 footer {
   text-align: center;
   padding-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(179, 175, 175);
+}
+
+a:hover {
+  color: rgb(233, 233, 233);
 }

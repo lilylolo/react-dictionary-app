@@ -41,8 +41,7 @@ export default function Dictionary() {
     
 
     function load() {
-        setLoaded(true);
-        search();
+        setLoaded(true); 
     }
 
     if (loaded) {
@@ -51,7 +50,7 @@ export default function Dictionary() {
 
         <div className="Dictionary">
             <section>
-                <h2>What word would you like to search?</h2>
+                <h2 className="Subtitle">What word would you like to search?</h2>
             <form onSubmit={handleSubmit}>
                 <input type="search" onChange={handleKeywordChange}/>
             </form>
